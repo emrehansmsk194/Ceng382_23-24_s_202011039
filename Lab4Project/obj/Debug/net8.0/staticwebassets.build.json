@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Wp7OhpLR51FSBSuKr+CWdliSIu4rfId0PVRTOMGK9UU=",
+  "Hash": "I6B3siI82Kbl8DnM9JzwL0/qomRpqJlZamGXknK81/k=",
   "Source": "Lab4Project",
   "BasePath": "_content/Lab4Project",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\Lab4Project\\wwwroot\\css\\carousel.css",
+      "SourceId": "Lab4Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\Lab4Project\\wwwroot\\",
+      "BasePath": "_content/Lab4Project",
+      "RelativePath": "css/carousel.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\carousel.css"
     },
     {
       "Identity": "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\Lab4Project\\wwwroot\\css\\css@3.css",
