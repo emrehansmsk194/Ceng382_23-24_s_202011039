@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\css@3.css"
     },
     {
+      "Id": "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\Lab4Project\\wwwroot\\css\\newcss.css",
+      "PackagePath": "staticwebassets\\css\\newcss.css"
+    },
+    {
       "Id": "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\Lab4Project\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -27,6 +31,10 @@
     {
       "Id": "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\Lab4Project\\wwwroot\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\Lab4Project\\wwwroot\\js\\button.js",
+      "PackagePath": "staticwebassets\\js\\button.js"
     },
     {
       "Id": "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\Lab4Project\\wwwroot\\js\\color-modes.js",

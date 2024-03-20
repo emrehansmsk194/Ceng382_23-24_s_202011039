@@ -5,14 +5,27 @@
 }
 
 <main>
-
+  <div id="buttons">
+    <button id="hidebutton" class="js-button-1" onclick="button()">Hide!</button>
+    <button id="calculate button" class="js-button-1" onclick = "showCalculateForm()">Calculate</button>
+  </div>
+   <form id="form" style="visibility: hidden;">
+      <label for="number1">Enter First Number:</label> <br>
+      <input type="number" id="number1"> <br>
+      <label for="number2">Enter Second Number:</label> <br>
+      <input type="number" id="number2"> <br>
+      <button onclick="calculate(); return false;"> Calculate </button> <br>
+    </form>
+  <div id="result"></div>
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+   
+   
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner">
+    <div class="carousel-inner" id="hide2">
       <div class="carousel-item active">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
         <div class="container">
@@ -59,7 +72,7 @@
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
-  <div class="container marketing">
+  <div id="hide" class="container marketing">
 
     <!-- Three columns of text below the carousel -->
     <div class="row">
@@ -134,4 +147,5 @@
     <p class="float-end"><a href="#">Back to top</a></p>
     <p>&copy; 2017–2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
   </footer>
+  
 </main>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I6B3siI82Kbl8DnM9JzwL0/qomRpqJlZamGXknK81/k=",
+  "Hash": "Oyl6oDXObtzzS0bE2rqdmk1zCC9imCQVQZEczJH9Qks=",
   "Source": "Lab4Project",
   "BasePath": "_content/Lab4Project",
   "Mode": "Default",
@@ -112,6 +112,25 @@
       "OriginalItemSpec": "wwwroot\\css\\css@3.css"
     },
     {
+      "Identity": "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\Lab4Project\\wwwroot\\css\\newcss.css",
+      "SourceId": "Lab4Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\Lab4Project\\wwwroot\\",
+      "BasePath": "_content/Lab4Project",
+      "RelativePath": "css/newcss.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\newcss.css"
+    },
+    {
       "Identity": "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\Lab4Project\\wwwroot\\css\\site.css",
       "SourceId": "Lab4Project",
       "SourceType": "Discovered",
@@ -167,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\Lab4Project\\wwwroot\\js\\button.js",
+      "SourceId": "Lab4Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\Lab4Project\\wwwroot\\",
+      "BasePath": "_content/Lab4Project",
+      "RelativePath": "js/button.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\button.js"
     },
     {
       "Identity": "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\Lab4Project\\wwwroot\\js\\color-modes.js",
