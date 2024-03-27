@@ -1,0 +1,15 @@
+C:\Users\EMREHAN\Desktop\Lab Klasörü\bin\Debug\net8.0\Lab Klasörü.exe
+C:\Users\EMREHAN\Desktop\Lab Klasörü\bin\Debug\net8.0\Lab Klasörü.deps.json
+C:\Users\EMREHAN\Desktop\Lab Klasörü\bin\Debug\net8.0\Lab Klasörü.runtimeconfig.json
+C:\Users\EMREHAN\Desktop\Lab Klasörü\bin\Debug\net8.0\Lab Klasörü.dll
+C:\Users\EMREHAN\Desktop\Lab Klasörü\bin\Debug\net8.0\Lab Klasörü.pdb
+C:\Users\EMREHAN\Desktop\Lab Klasörü\obj\Debug\net8.0\Lab Klasörü.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMREHAN\Desktop\Lab Klasörü\obj\Debug\net8.0\Lab Klasörü.AssemblyInfoInputs.cache
+C:\Users\EMREHAN\Desktop\Lab Klasörü\obj\Debug\net8.0\Lab Klasörü.AssemblyInfo.cs
+C:\Users\EMREHAN\Desktop\Lab Klasörü\obj\Debug\net8.0\Lab Klasörü.csproj.CoreCompileInputs.cache
+C:\Users\EMREHAN\Desktop\Lab Klasörü\obj\Debug\net8.0\Lab Klasörü.sourcelink.json
+C:\Users\EMREHAN\Desktop\Lab Klasörü\obj\Debug\net8.0\Lab Klasörü.dll
+C:\Users\EMREHAN\Desktop\Lab Klasörü\obj\Debug\net8.0\refint\Lab Klasörü.dll
+C:\Users\EMREHAN\Desktop\Lab Klasörü\obj\Debug\net8.0\Lab Klasörü.pdb
+C:\Users\EMREHAN\Desktop\Lab Klasörü\obj\Debug\net8.0\Lab Klasörü.genruntimeconfig.cache
+C:\Users\EMREHAN\Desktop\Lab Klasörü\obj\Debug\net8.0\ref\Lab Klasörü.dll
