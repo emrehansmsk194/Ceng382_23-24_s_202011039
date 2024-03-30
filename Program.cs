@@ -66,7 +66,7 @@ public void deleteReservation(Reservation r){
     }
 
 }
-public void displayWeeklySchedule(DateTime referenceDate){
+public void displayWeeklySchedule(){
         DateTime startOfWeek = new DateTime(2024,3,25);
         DateTime endOfWeek = new DateTime(2024,3,31);
         Console.WriteLine("Reservation List between the 25 March - 31 March 2024: ");
@@ -116,7 +116,7 @@ class Program {
     static void Main(string [] args)
     {
         ReservationHandler handler = new ReservationHandler();
-        DateTime inputDate, inputTime, currentDate;
+        DateTime inputDate, inputTime;
         string name;
         int randomIndex3;
         // path to json
@@ -137,7 +137,6 @@ class Program {
                 Console.WriteLine($"Room ID: {room.roomId}, Name: {room.roomName}, Capacity {room.capacity}");
             }
         }*/
-        currentDate = DateTime.Now;
         int randomIndex = random.Next(roomData.Rooms.Length);
 
         Room room = roomData.Rooms[randomIndex];
@@ -219,7 +218,7 @@ class Program {
 
         handler.addReservation(reservation1);
         handler.addReservation(reservation2);
-        handler.displayWeeklySchedule(currentDate);
+        handler.displayWeeklySchedule();
         }
 
 
