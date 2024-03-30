@@ -67,7 +67,9 @@ public void deleteReservation(Reservation r){
 
 }
 public void displayWeeklySchedule(DateTime referenceDate){
-        Console.WriteLine("Reservation List between the 25 March - 1 April 2024: ");
+        DateTime startOfWeek = new DateTime(2024,3,25);
+        DateTime endOfWeek = new DateTime(2024,3,31);
+        Console.WriteLine("Reservation List between the 25 March - 31 March 2024: ");
         for(int i=0; i<reservations.GetLength(0); i++){ // loop for days
             string dayName;
             if(i==6){
@@ -79,8 +81,9 @@ public void displayWeeklySchedule(DateTime referenceDate){
             for(int j=0; j<reservations.GetLength(1); j++){ // loop for hours
             
                 if(reservations[i,j] != null){
-                   int daysDiff = (reservations[i,j].date - referenceDate).Days;
-                   if(daysDiff >=0 && daysDiff <= 6){
+                   DateTime reservationDate = reservations[i,j].date;
+                  
+                   if(reservationDate >= startOfWeek && reservationDate <= endOfWeek){
                          Console.WriteLine($"Day {dayName}, Hour {j+9}: 00 : Reserved by {reservations[i,j].reserverName} in room {reservations[i,j].room.roomName}");
                    }
                   
