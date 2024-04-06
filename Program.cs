@@ -7,22 +7,10 @@ public class RoomData{
     [JsonPropertyName("Room")]
     public  Room[] Rooms {get; set;}
 }
-public class Room{
-     [JsonPropertyName("roomId")]
-     public string roomId{get; set;}
-
-    [JsonPropertyName("roomName")]
-
-    public string roomName {get; set;}
-
-      [JsonPropertyName("capacity")]
-
-    public int capacity {get; set;}
-
-
-
-
-}
+public record Room(
+    [property: JsonPropertyName("roomId")] string RoomId,
+    [property: JsonPropertyName("roomName")] string RoomName,
+    [property: JsonPropertyName("capacity")] int Capacity);
 public class ReservationHandler{
 private  Reservation[,] reservations;
 public ReservationHandler(){
@@ -66,7 +54,9 @@ public void deleteReservation(Reservation r){
     }
 
 }
-public void displayWeeklySchedule(){
+public void displayWeeklySchedule(){ /* In this part of the code, it is against the Single Responsibility
+Principle for the ReservationHandler class to both add and remove reservations and display weekly reservations.
+*/
         DateTime startOfWeek = new DateTime(2024,3,25);
         DateTime endOfWeek = new DateTime(2024,3,31);
         Console.WriteLine("Reservation List between the 25 March - 31 March 2024: ");
@@ -98,14 +88,8 @@ public void displayWeeklySchedule(){
 }
 
 
-public class Reservation{
-public  DateTime time{get; set;}
-public   DateTime date{get; set;}
+public record Reservation(DateTime time, DateTime date, string reserverName, Room room);
 
-public string reserverName{get; set;}
-
-public Room room {get; set;}
-}
 
 class Program {
 
