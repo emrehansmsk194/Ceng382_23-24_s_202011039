@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Microsoft.VisualBasic;
@@ -7,6 +8,7 @@ public class RoomData{
     [JsonPropertyName("Room")]
     public  Room[] Rooms {get; set;}
 }
+public record LogRecord(DateTime Timestamp, string reserverName, string roomName);
 public record Room(
     [property: JsonPropertyName("roomId")] string RoomId,
     [property: JsonPropertyName("roomName")] string RoomName,
@@ -56,6 +58,10 @@ public void deleteReservation(Reservation r){
 }
 public void displayWeeklySchedule(){ /* In this part of the code, it is against the Single Responsibility
 Principle for the ReservationHandler class to both add and remove reservations and display weekly reservations.
+The Single Responsibility Principle (SRP) makes web applications easier to maintain, reduces the risk of errors, 
+and makes the development process efficient by increasing code reusability and testability. 
+This principle supports the flexibility and extensibility of the system by ensuring that each class focuses on only one responsibility.
+
 */
         DateTime startOfWeek = new DateTime(2024,3,25);
         DateTime endOfWeek = new DateTime(2024,3,31);
