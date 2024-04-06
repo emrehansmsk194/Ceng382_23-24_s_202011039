@@ -62,6 +62,11 @@ The Single Responsibility Principle (SRP) makes web applications easier to maint
 and makes the development process efficient by increasing code reusability and testability. 
 This principle supports the flexibility and extensibility of the system by ensuring that each class focuses on only one responsibility.
 
+
+It is against the Dependency Injection Principle for the ReservationHandler class to depend on a lower class, the Reservation class. 
+To comply with DIP, an interface called IReservationRepository should be created.
+
+
 */
         DateTime startOfWeek = new DateTime(2024,3,25);
         DateTime endOfWeek = new DateTime(2024,3,31);
