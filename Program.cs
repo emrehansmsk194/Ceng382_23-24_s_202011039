@@ -11,6 +11,12 @@ public record Room(
 public record Reservation(DateTime time, DateTime date, string reserverName, Room room);
 
 
+#pragma warning disable CA1050 // Declare types in namespaces
+public class RoomData {
+
+    public Room[]? Rooms { get; set; }
+}
+
 class Program {
 
    
