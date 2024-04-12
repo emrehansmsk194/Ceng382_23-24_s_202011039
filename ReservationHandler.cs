@@ -37,10 +37,10 @@ public List<Room> GetRooms(){
       string jsonFilePath = "Data.json"; 
       string jsonString = File.ReadAllText(jsonFilePath);
       var roomData = JsonSerializer.Deserialize<RoomData>(jsonString);
-      return roomData?.Rooms.ToList() ?? new List<Room>();
+      return roomData?.Room.ToList() ?? new List<Room>();
 }
 public void SaveRooms(List<Room> rooms){
-     var roomData = new RoomData { Rooms = rooms.ToArray() };
+     var roomData = new RoomData { Room = rooms.ToArray() };
      string jsonString = JsonSerializer.Serialize(roomData, new JsonSerializerOptions { WriteIndented = true });
      File.WriteAllText("Data.json", jsonString); 
 }

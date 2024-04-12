@@ -5,14 +5,18 @@ using System.Text.Json.Serialization;
 
 class RoomHandler{
     private string _filepath;
+    public RoomHandler(string filepath)
+    {
+        _filepath = filepath;
+    }
     public List<Room>GetRooms(){
         // Logic to read from JSON file
         try{
             string json = File.ReadAllText(_filepath);
             RoomData roomData = JsonSerializer.Deserialize<RoomData>(json);
-            if (roomData?.Rooms != null)
+            if (roomData?.Room != null)
             {
-                return new List<Room>(roomData.Rooms);
+                return new List<Room>(roomData.Room);
             }
             else
             {
@@ -26,7 +30,7 @@ class RoomHandler{
     }
     public void SaveRoom(List<Room> rooms){
         try{
-            RoomData roomData = new RoomData {Rooms = rooms.ToArray()};
+            RoomData roomData = new RoomData {Room = rooms.ToArray()};
             string jsonString = JsonSerializer.Serialize(roomData, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(_filepath, jsonString);
         }

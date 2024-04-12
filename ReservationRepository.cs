@@ -18,12 +18,12 @@ class ReservationRepository: IReservationRepository{
     public void AddReservation(Reservation reservation){
         _reservations.Add(reservation);
         UpdateReservationDataFile();
-        _logger.Log(new LogRecord(DateTime.Now, reservation.reserverName, $"Added Reservation: {reservation.room.RoomName}"));
+        //_logger.Log(new LogRecord(DateTime.Now, reservation.reserverName, $"Added Reservation: {reservation.room.RoomName}"));
     }
     public void DeleteReservation(Reservation reservation){
         _reservations.Remove(reservation); 
         UpdateReservationDataFile();
-        _logger.Log(new LogRecord(DateTime.Now, reservation.reserverName, $"Added Reservation: {reservation.room.RoomName}"));
+        //_logger.Log(new LogRecord(DateTime.Now, reservation.reserverName, $"Added Reservation: {reservation.room.RoomName}"));
     }
     public List<Reservation> GetAllReservations(){
         return _reservations;
