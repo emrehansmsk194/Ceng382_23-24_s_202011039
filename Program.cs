@@ -76,6 +76,7 @@ class Program {
 
 
     Console.WriteLine("Available Rooms:");
+    Thread.Sleep(1000);
     var rooms = roomHandler.GetRooms();
     foreach (var room in rooms)
     {
@@ -110,12 +111,15 @@ class Program {
                 Console.WriteLine("Your reservation successfully created.");
                 Reservation r = new Reservation(DateTime.Now,DateTime.Now,name,room);
                 reservationHandler.AddReservation(r);
+                Thread.Sleep(1000);
                 break;
             case "2":
                 DeleteReservation(reservationHandler);
+                Thread.Sleep(1000);
                 break;
             case "3":
                 reservationService.DisplayWeeklySchedule();
+                Thread.Sleep(1000);
                 break;
             case "4":
                 process = false;

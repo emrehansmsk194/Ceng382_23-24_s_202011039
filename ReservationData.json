@@ -1,32 +1,12 @@
 [
   {
-    "time": "2024-04-12T20:50:36.4268376+03:00",
-    "date": "2024-04-12T20:50:36.4268397+03:00",
-    "reserverName": "Bilgesu Findik",
+    "time": "2024-04-13T20:01:21.9037678+03:00",
+    "date": "2024-04-13T20:01:21.9037694+03:00",
+    "reserverName": "Baris",
     "room": {
-      "roomId": "012",
-      "roomName": "A-112",
-      "capacity": 44
-    }
-  },
-  {
-    "time": "2024-04-12T20:50:46.0657757+03:00",
-    "date": "2024-04-12T20:50:46.0657791+03:00",
-    "reserverName": "Burak",
-    "room": {
-      "roomId": "003",
-      "roomName": "A-103",
-      "capacity": 26
-    }
-  },
-  {
-    "time": "2024-04-12T20:50:53.397876+03:00",
-    "date": "2024-04-12T20:50:53.397881+03:00",
-    "reserverName": "Bekir",
-    "room": {
-      "roomId": "015",
-      "roomName": "A-115",
-      "capacity": 50
+      "roomId": "010",
+      "roomName": "A-110",
+      "capacity": 40
     }
   }
 ]
