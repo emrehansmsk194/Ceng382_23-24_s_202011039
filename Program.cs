@@ -10,8 +10,6 @@ public record Room(
     [property: JsonPropertyName("capacity")] int Capacity);
 public record Reservation(DateTime time, DateTime date, string reserverName, Room room);
 
-
-
 public class RoomData {
 
     public Room[]? Room { get; set; }
@@ -77,7 +75,7 @@ class Program {
 
     Console.WriteLine("Available Rooms:");
     Thread.Sleep(1000);
-    var rooms = roomHandler.GetRooms();
+    var rooms = RoomHandler.GetRooms();
     foreach (var room in rooms)
     {
         Console.WriteLine($"Room Name: {room.RoomName}, Capacity: {room.Capacity}");

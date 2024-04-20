@@ -4,7 +4,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 
 
-class ReservationHandler {
+public class ReservationHandler {
 private IReservationRepository _reservationRepository; 
 private LogHandler _logHandler;
 

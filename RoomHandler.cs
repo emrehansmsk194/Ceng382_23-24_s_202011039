@@ -3,13 +3,13 @@ using System.Data;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-class RoomHandler{
-    private string _filepath;
+public class RoomHandler{
+    private static string _filepath;
     public RoomHandler(string filepath)
     {
         _filepath = filepath;
     }
-    public List<Room>GetRooms(){
+    public static List<Room>GetRooms(){
         // Logic to read from JSON file
         try{
             string json = File.ReadAllText(_filepath);
@@ -38,6 +38,13 @@ class RoomHandler{
             Console.WriteLine($"An error occurred while saving the rooms to the JSON file: {ex.Message}");
         }
     }
+    public static List<string> GetRoomByNameId(string roomId){
+        List<Room> rooms= GetRooms();
+        var matching_rooms = rooms.Where(r => r.RoomId == roomId).Select(r => r.RoomName).ToList();
+        return matching_rooms;
+        
+
+        }
+    }
 
 
-}
