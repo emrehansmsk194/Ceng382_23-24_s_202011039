@@ -13,7 +13,7 @@ public class RoomHandler{
         // Logic to read from JSON file
         try{
             string json = File.ReadAllText(_filepath);
-            RoomData roomData = JsonSerializer.Deserialize<RoomData>(json);
+            RoomData? roomData = JsonSerializer.Deserialize<RoomData>(json);
             if (roomData?.Room != null)
             {
                 return new List<Room>(roomData.Room);

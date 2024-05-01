@@ -11,7 +11,6 @@ public record Room(
 public record Reservation(DateTime time, DateTime date, string reserverName, Room room);
 
 public class RoomData {
-
     public Room[]? Room { get; set; }
 }
 
@@ -56,7 +55,7 @@ class Program {
     string roomsDataFilePath = "Data.json";
     string json = File.ReadAllText("Data.json");
     int randomIndex;
-    RoomData roomData = JsonSerializer.Deserialize<RoomData>(json);
+    RoomData? roomData = JsonSerializer.Deserialize<RoomData>(json);
    
     
     // create LogHandler and FileLogger objects
@@ -82,25 +81,26 @@ class Program {
     }
 
     Console.WriteLine("\nReservations of This Week:");
-    reservationService.DisplayWeeklySchedule();
-
-   
+       
     bool process = true;
     while(process){
+        ReservationService.InitializeReservations(reservationDataFilePath);
         Console.WriteLine("\nPlease Select a transaction: ");
         Console.WriteLine("1. Create New Reservation");
         Console.WriteLine("2. Delete a Reservation");
         Console.WriteLine("3. View the Reservations of this week");
-        Console.WriteLine("4. Exit");
+        Console.WriteLine("4. Search for Reservations by entering Reserver Name");
+        Console.WriteLine("5. Search for Reservations by entering Room Id ");
+        Console.WriteLine("6. Exit");
         Console.Write("Choice: ");
-        string choice = Console.ReadLine();
+        string? choice = Console.ReadLine();
 
         switch(choice){
             case "1":
                 randomIndex = random.Next(roomData.Room.Length);
-                Room room = roomData.Room[randomIndex];
+                Room? room = roomData.Room[randomIndex];
                 Console.WriteLine("Enter your Name: ");
-                string name = Console.ReadLine();
+                string? name = Console.ReadLine();
                 if (string.IsNullOrWhiteSpace(name))
                 {
                     Console.WriteLine("Name cannot be empty.");
@@ -120,6 +120,26 @@ class Program {
                 Thread.Sleep(1000);
                 break;
             case "4":
+                Console.WriteLine("Enter Reserver Name: ");
+                string? reserver_name = Console.ReadLine();
+                if(string.IsNullOrWhiteSpace(reserver_name)){
+                    Console.WriteLine("Name cannot be empty!");
+                    return;
+                }
+                ReservationService.DisplayReservationByReserver(reserver_name);
+                Thread.Sleep(1000);
+                break;
+            case "5":
+                Console.WriteLine("Enter the Room ID: ");
+                string? room_id = Console.ReadLine();
+                  if(string.IsNullOrWhiteSpace(room_id)){
+                    Console.WriteLine("The Room ID cannot be empty!");
+                    return;
+                }
+                ReservationService.DisplayReservationByRoomId(room_id);
+                Thread.Sleep(1000);
+                break;
+            case "6":
                 process = false;
                 break;
             default:
