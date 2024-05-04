@@ -51,6 +51,7 @@ class Program {
     static void Main(string [] args)
     {
     string logFilePath = "LogData.json"; 
+    string formattedLogFilePath = "LogData.json.formatted.json";
     string reservationDataFilePath = "ReservationData.json"; 
     string roomsDataFilePath = "Data.json";
     string json = File.ReadAllText("Data.json");
@@ -70,8 +71,8 @@ class Program {
     ReservationHandler reservationHandler = new ReservationHandler(reservationRepository, logHandler, roomHandler);
    // create ReservationService object
     ReservationService reservationService = new ReservationService(reservationHandler);
-
-
+   
+    LogService.InitializeLogs(formattedLogFilePath);
     Console.WriteLine("Available Rooms:");
     Thread.Sleep(1000);
     var rooms = RoomHandler.GetRooms();
@@ -80,7 +81,6 @@ class Program {
         Console.WriteLine($"Room Name: {room.RoomName}, Capacity: {room.Capacity}");
     }
 
-    Console.WriteLine("\nReservations of This Week:");
        
     bool process = true;
     while(process){
@@ -91,10 +91,11 @@ class Program {
         Console.WriteLine("3. View the Reservations of this week");
         Console.WriteLine("4. Search for Reservations by entering Reserver Name");
         Console.WriteLine("5. Search for Reservations by entering Room Id ");
-        Console.WriteLine("6. Exit");
+        Console.WriteLine("6. Display All Logs by entering Reserver Name ");
+        Console.WriteLine("7. Exit");
         Console.Write("Choice: ");
         string? choice = Console.ReadLine();
-
+      
         switch(choice){
             case "1":
                 randomIndex = random.Next(roomData.Room.Length);
@@ -140,6 +141,22 @@ class Program {
                 Thread.Sleep(1000);
                 break;
             case "6":
+                Console.WriteLine("Enter the Reserver Name: ");
+                string? room_id2 = Console.ReadLine();
+                var enteringLogs = LogService.DisplayLogsByName(room_id2);
+                if (enteringLogs.Any())
+                    {
+                        foreach (var log in enteringLogs)
+                        {
+                            Console.WriteLine($"Date: {log.Date}, Reserver: {log.ReserverName}, Room: {log.RoomName}");
+                        }
+                    }
+                else
+                {
+                            Console.WriteLine("No logs found for Emrehan.");
+                }
+                break;
+            case "7":
                 process = false;
                 break;
             default:
