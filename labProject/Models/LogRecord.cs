@@ -5,8 +5,8 @@ public class LogRecord{
     public DateTime? Timestamp { get; set; }
 
     // foreign keys
-    public int ReservationId { get; set; }
-    public int RoomId { get; set; }
+    public int? ReservationId { get; set; }
+    public int? RoomId { get; set; }
 
     // Navigation properties
 

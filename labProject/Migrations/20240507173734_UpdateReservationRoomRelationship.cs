@@ -18,7 +18,7 @@ namespace labProject.Migrations
                 name: "RoomId",
                 table: "reservations",
                 type: "int",
-                nullable: false,
+                nullable: true,
                 defaultValue: 0,
                 oldClrType: typeof(int),
                 oldType: "int",
@@ -44,7 +44,7 @@ namespace labProject.Migrations
                 name: "RoomId",
                 table: "reservations",
                 type: "int",
-                nullable: true,
+                nullable: false,
                 oldClrType: typeof(int),
                 oldType: "int");
 

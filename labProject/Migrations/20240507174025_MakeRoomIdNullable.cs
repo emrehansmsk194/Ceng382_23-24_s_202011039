@@ -10,7 +10,7 @@ namespace labProject.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterColumn<int>(
+            migrationBuilder.AlterColumn<int?>(
                 name: "RoomId",
                 table: "reservations",
                 type: "int",
@@ -22,11 +22,11 @@ namespace labProject.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterColumn<int>(
+            migrationBuilder.AlterColumn<int?>(
                 name: "RoomId",
                 table: "reservations",
                 type: "int",
-                nullable: false,
+                nullable: true,
                 defaultValue: 0,
                 oldClrType: typeof(int),
                 oldType: "int",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\labProject\\labProject.csproj": {}
+    "c:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\labProject\\labProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\labProject\\labProject.csproj": {
+    "c:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\labProject\\labProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\labProject\\labProject.csproj",
+        "projectUniqueName": "c:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\labProject\\labProject.csproj",
         "projectName": "labProject",
-        "projectPath": "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\labProject\\labProject.csproj",
+        "projectPath": "c:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\labProject\\labProject.csproj",
         "packagesPath": "C:\\Users\\EMREHAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\labProject\\obj\\",
+        "outputPath": "c:\\Users\\EMREHAN\\Desktop\\Lab Klasörü\\labProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\EMREHAN\\AppData\\Roaming\\NuGet\\NuGet.Config",

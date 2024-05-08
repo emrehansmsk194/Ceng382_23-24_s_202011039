@@ -20,3 +20,41 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.btn-primary {
+  margin-left: 110px;
+  padding: 8px 30px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+.form-control {
+  width: 90%;
+  margin-left: 15px;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 15px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  background-color: white;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form{
+  margin: auto;
+  background-color: skyblue;
+  width: 30%;
+ 
+}
+#header1{
+  margin: auto;
+  text-align: center;
+}
