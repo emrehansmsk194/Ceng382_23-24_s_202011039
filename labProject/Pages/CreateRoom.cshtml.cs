@@ -22,7 +22,7 @@ namespace MyApp.Namespace
             NewRoom.IsDeleted = false;
             ToDo.Add(NewRoom);
             ToDo.SaveChanges();
-            return RedirectToAction("Get");
+            return RedirectToPage("/ShowRoom");
         }
     }
 }

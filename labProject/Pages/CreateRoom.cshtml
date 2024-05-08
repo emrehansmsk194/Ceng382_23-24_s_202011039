@@ -9,7 +9,7 @@
     <title>Create Room</title>
 </head>
 <body>
-    <h1 id="header1">Add Room</h1>
+    <h1 class="header1">Add Room</h1>
     <form method="post" class="form">
         <div class="form-group">
             <label for="RoomName">Room Name:</label>
@@ -22,13 +22,10 @@
         <button type="submit" class="btn btn-primary">Create Room</button>
     </form>
 </body>
-
-
-
-
-
 </html>
-
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+}
 
 
 

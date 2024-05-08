@@ -54,7 +54,42 @@ body {
   width: 30%;
  
 }
-#header1{
+.header1{
   margin: auto;
   text-align: center;
+}
+table{
+  margin: auto;
+  width: 40%;
+  border-collapse: collapse;
+  
+}
+th{
+  background-color: #4CAF50; 
+    color: white; 
+    padding: 15px; 
+    border: 1px solid #ddd;
+    text-align: center;
+}
+td{
+  background-color: #4CAF50; 
+  color: white;
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.btn-danger {
+  margin-left: 10px;
+  text-align: center;
+  background-color: #f44336; 
+  width: 100px;
+  color: white; 
+}
+
+.btn-danger:hover {
+  background-color: #d32f2f; 
+}
+#column1{
+  width: 40px;
 }
