@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "edPK1tBd8UWiND3a8R9CZj6nyvjnDH7ep1waG2tdrb8sTJguZplZJ6sBeGKL/GTFGaOeNjIaPBw302bFgDT96A==",
+  "dgSpecHash": "Et/d6M6R53YF6tg0p7ptE5sxvmQawCt6x7V3/oS9sVw5UV0xdkGrudesl43+IOYA34AqD+zM/1kpShhkDnQZbA==",
   "success": true,
   "projectFilePath": "C:\\Users\\EMREHAN\\Desktop\\lab11\\Ceng382_23-24_s_202011039\\WebApp1\\WebApp1.csproj",
   "expectedPackageFiles": [
@@ -133,6 +133,8 @@
     "C:\\Users\\EMREHAN\\.nuget\\packages\\nuget.projectmodel\\6.9.1\\nuget.projectmodel.6.9.1.nupkg.sha512",
     "C:\\Users\\EMREHAN\\.nuget\\packages\\nuget.protocol\\6.9.1\\nuget.protocol.6.9.1.nupkg.sha512",
     "C:\\Users\\EMREHAN\\.nuget\\packages\\nuget.versioning\\6.9.1\\nuget.versioning.6.9.1.nupkg.sha512",
+    "C:\\Users\\EMREHAN\\.nuget\\packages\\sendgrid\\9.29.3\\sendgrid.9.29.3.nupkg.sha512",
+    "C:\\Users\\EMREHAN\\.nuget\\packages\\starkbank-ecdsa\\1.3.3\\starkbank-ecdsa.1.3.3.nupkg.sha512",
     "C:\\Users\\EMREHAN\\.nuget\\packages\\system.codedom\\5.0.0\\system.codedom.5.0.0.nupkg.sha512",
     "C:\\Users\\EMREHAN\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
     "C:\\Users\\EMREHAN\\.nuget\\packages\\system.composition\\7.0.0\\system.composition.7.0.0.nupkg.sha512",

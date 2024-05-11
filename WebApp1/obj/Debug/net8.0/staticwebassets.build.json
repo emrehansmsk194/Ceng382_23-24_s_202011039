@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "J0fCIWBD/KBfF3qKoaYmVFM/xcHkihQ4mwHxlaA9caY=",
+  "Hash": "1tSmMD25g6qp9YqmB5mxak0wa1EzK0oFM6DCCcScrcE=",
   "Source": "WebApp1",
   "BasePath": "_content/WebApp1",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\EMREHAN\\Desktop\\lab11\\Ceng382_23-24_s_202011039\\WebApp1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebApp1.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\EMREHAN\\Desktop\\lab11\\Ceng382_23-24_s_202011039\\WebApp1\\wwwroot\\css\\login.css",
+      "SourceId": "WebApp1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\EMREHAN\\Desktop\\lab11\\Ceng382_23-24_s_202011039\\WebApp1\\wwwroot\\",
+      "BasePath": "_content/WebApp1",
+      "RelativePath": "css/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
       "Identity": "C:\\Users\\EMREHAN\\Desktop\\lab11\\Ceng382_23-24_s_202011039\\WebApp1\\wwwroot\\css\\site copy.css",

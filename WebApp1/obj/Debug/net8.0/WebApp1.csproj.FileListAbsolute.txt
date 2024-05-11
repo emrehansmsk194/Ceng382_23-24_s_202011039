@@ -70,6 +70,8 @@ C:\Users\EMREHAN\Desktop\lab11\Ceng382_23-24_s_202011039\WebApp1\bin\Debug\net8.
 C:\Users\EMREHAN\Desktop\lab11\Ceng382_23-24_s_202011039\WebApp1\bin\Debug\net8.0\NuGet.ProjectModel.dll
 C:\Users\EMREHAN\Desktop\lab11\Ceng382_23-24_s_202011039\WebApp1\bin\Debug\net8.0\NuGet.Protocol.dll
 C:\Users\EMREHAN\Desktop\lab11\Ceng382_23-24_s_202011039\WebApp1\bin\Debug\net8.0\NuGet.Versioning.dll
+C:\Users\EMREHAN\Desktop\lab11\Ceng382_23-24_s_202011039\WebApp1\bin\Debug\net8.0\SendGrid.dll
+C:\Users\EMREHAN\Desktop\lab11\Ceng382_23-24_s_202011039\WebApp1\bin\Debug\net8.0\StarkbankEcdsa.dll
 C:\Users\EMREHAN\Desktop\lab11\Ceng382_23-24_s_202011039\WebApp1\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\EMREHAN\Desktop\lab11\Ceng382_23-24_s_202011039\WebApp1\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 C:\Users\EMREHAN\Desktop\lab11\Ceng382_23-24_s_202011039\WebApp1\bin\Debug\net8.0\System.Composition.Convention.dll
