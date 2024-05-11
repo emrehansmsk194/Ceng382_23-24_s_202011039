@@ -1,0 +1,95 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.btn-primary {
+  margin-left: 110px;
+  padding: 8px 30px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+.form-control {
+  width: 90%;
+  margin-left: 15px;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 15px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  background-color: white;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form{
+  margin: auto;
+  background-color: skyblue;
+  width: 30%;
+ 
+}
+.header1{
+  margin: auto;
+  text-align: center;
+}
+table{
+  margin: auto;
+  width: 40%;
+  border-collapse: collapse;
+  
+}
+th{
+  background-color: #4CAF50; 
+    color: white; 
+    padding: 15px; 
+    border: 1px solid #ddd;
+    text-align: center;
+}
+td{
+  background-color: #4CAF50; 
+  color: white;
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.btn-danger {
+  margin-left: 10px;
+  text-align: center;
+  background-color: #f44336; 
+  width: 100px;
+  color: white; 
+}
+
+.btn-danger:hover {
+  background-color: #d32f2f; 
+}
+#column1{
+  width: 40px;
+}
