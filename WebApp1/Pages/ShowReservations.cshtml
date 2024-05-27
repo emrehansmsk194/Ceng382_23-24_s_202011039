@@ -1,0 +1,136 @@
+﻿@page
+@model MyApp.Namespace.ShowReservationsModel
+@{
+    ViewData["Title"] = "Reservations";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Reservations</title>
+    <link rel="stylesheet" href="~/css/site.css">
+    <style>
+        .timetable {
+            margin-left: 100px;
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .timetable th, .timetable td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .timetable th {
+            background-color: #f2f2f2;
+        }
+        .timetable td{
+            background-color: white;
+        }
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .reservation {
+            margin-bottom: 10px;
+            padding: 5px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+     
+    </style>
+</head>
+<body>
+    <section class="form">
+        <h1 class="header1">Weekly Reservations</h1>
+        <form method="get">
+             <div>
+                <label for="roomNameFilter">Room Name:</label>
+                <input id="roomNameFilter" name="RoomNameFilter" type="text" class="form-control" value="@Model.RoomNameFilter">
+            </div>
+            <div>
+                <label for="startDateFilter">Start Date:</label>
+                <input id="startDateFilter" name="StartDateFilter" type="date" class="form-control" value="@Model.StartDateFilter?.ToString("yyyy-MM-dd")">
+            </div>
+            <div>
+                <label for="endDateFilter">End Date:</label>
+                <input id="endDateFilter" name="EndDateFilter" type="date" class="form-control" value="@Model.EndDateFilter?.ToString("yyyy-MM-dd")">
+            </div>
+            <div>
+                <label for="capacityFilter">Capacity:</label>
+                <input id="capacityFilter" name="CapacityFilter" type="number" class="form-control" value="@Model.CapacityFilter">
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Filter</button>
+            </div>
+            <label for="weekSelect">Select Week:</label>
+            <select id="weekSelect" name="SelectedWeek" class="form-control" onchange="this.form.submit()">
+                @foreach (var week in Model.Weeks)
+                {
+                    if (week == Model.SelectedWeek)
+                    {
+                        <option value="@week.ToString("yyyy-MM-dd")" selected>@week.ToString("dd MMM yyyy") - @week.AddDays(6).ToString("dd MMM yyyy")</option>
+                    }
+                    else
+                    {
+                        <option value="@week.ToString("yyyy-MM-dd")">@week.ToString("dd MMM yyyy") - @week.AddDays(6).ToString("dd MMM yyyy")</option>
+                    }
+                }
+            </select>
+              </div>
+            
+        </form>
+       
+       
+    </section>
+
+     <table class="timetable">
+            <thead>
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    @for (int i = 0; i < 7; i++)
+                    {
+                        var currentDate = Model.SelectedWeek.AddDays(i).ToString("yyyy-MM-dd");
+                        <td>
+                            @if (Model.WeeklyReservations.ContainsKey(currentDate))
+                            {
+                                @foreach (var reservation in Model.WeeklyReservations[currentDate])
+                                {
+                                    <div>
+                                        Room: @reservation.Room.RoomName <br />
+                                        Reserver: @reservation.ReserverName <br />
+                                        Time: @reservation.Time.ToString("HH:mm") <br />
+                                        <div class="actions">
+                                            <form method="post" asp-page-handler="Edit">
+                                                <input type="hidden" name="id" value="@reservation.Id" />
+                                                <button type="submit" class="btn btn-primary">Edit</button>
+                                            </form>
+                                            <form method="post" asp-page-handler="Delete">
+                                                <input type="hidden" name="id" value="@reservation.Id" />
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                }
+                            }
+                        </td>
+                    }
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>

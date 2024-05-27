@@ -60,7 +60,7 @@ body {
 }
 table{
   margin: auto;
-  width: 40%;
+  width: 80%;
   border-collapse: collapse;
   
 }
@@ -92,4 +92,7 @@ td{
 }
 #column1{
   width: 40px;
+}
+section{
+  background-color: white;
 }

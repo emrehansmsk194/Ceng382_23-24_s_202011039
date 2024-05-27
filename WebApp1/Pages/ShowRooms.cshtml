@@ -14,7 +14,6 @@
         <tr>
             <th scope="col">Room Name</th>
             <th scope="col">Capacity</th>
-            <th>Remove</th>
         </tr>
     </thead>
     <tbody>
@@ -22,11 +21,6 @@
             <tr>
                 <td>@room.RoomName</td>
                 <td>@room.Capacity</td>
-                <td id="column1">
-                <form method="post" asp-page-handler="Delete" asp-route-id="@room.Id">
-                    <button class="btn btn-danger">Delete</button>
-                </form>
-                </td>
             </tr>
         }
     </tbody>

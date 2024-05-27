@@ -12,8 +12,8 @@ using WebApp1.Models;
 namespace WebApp1.Migrations
 {
     [DbContext(typeof(WebAppDatabaseContext))]
-    [Migration("20240511133943_RenameTables")]
-    partial class RenameTables
+    [Migration("20240527135632_InitialMigrationCreated")]
+    partial class InitialMigrationCreated
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,7 +48,7 @@ namespace WebApp1.Migrations
 
                     b.HasIndex(new[] { "RoomId" }, "IX_logRecords_RoomId");
 
-                    b.ToTable("LogRecords", (string)null);
+                    b.ToTable("logRecords", (string)null);
                 });
 
             modelBuilder.Entity("WebApp1.Models.Reservation", b =>
@@ -58,9 +58,6 @@ namespace WebApp1.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateOnly>("Date")
-                        .HasColumnType("date");
 
                     b.Property<string>("ReserverName")
                         .HasColumnType("nvarchar(max)");
@@ -75,7 +72,7 @@ namespace WebApp1.Migrations
 
                     b.HasIndex(new[] { "RoomId" }, "IX_reservations_RoomId");
 
-                    b.ToTable("Reservations", (string)null);
+                    b.ToTable("reservations", (string)null);
                 });
 
             modelBuilder.Entity("WebApp1.Models.Room", b =>
@@ -97,7 +94,7 @@ namespace WebApp1.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Rooms", (string)null);
+                    b.ToTable("rooms", (string)null);
                 });
 
             modelBuilder.Entity("WebApp1.Models.LogRecord", b =>

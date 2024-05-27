@@ -1,0 +1,21 @@
+.timetable {
+    width: 50%;
+    border-collapse: collapse;
+}
+.timetable th, .timetable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.timetable th {
+    background-color: white;
+    text-align: center;
+}
+.timetable td {
+    text-align: center;
+    background-color: gray;
+}
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

@@ -1,0 +1,52 @@
+﻿@page
+@model MyApp.Namespace.CreateReservationsModel
+@{
+   ViewData["Title"] = "Create Reservation";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Reservation</title>
+    <link rel="stylesheet" href="~/css/site.css">
+   
+</head>
+<body>
+    <section class="form">
+        <h1 class="header1">Create a Reservation</h1>
+        <form id="createReservationForm" method="post">
+            <div class="form-group">
+                <label asp-for="NewReservation.ReserverName"></label>
+                <input asp-for="NewReservation.ReserverName" class="form-control" />
+                <span asp-validation-for="NewReservation.ReserverName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NewReservation.RoomId">Room Name</label>
+                <select asp-for="NewReservation.RoomId" class="form-control">
+                    @foreach (var room in Model.RoomsList)
+                    {
+                        <option value="@room.Id">@room.RoomName</option>
+                    }
+                </select>
+                <span asp-validation-for="NewReservation.RoomId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NewReservation.Time"></label>
+                <input asp-for="NewReservation.Time" class="form-control datetimepicker" />
+                <span asp-validation-for="NewReservation.Time" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+    </section>
+
+   
+    <script>
+        $(function () {
+            $('.datetimepicker').datetimepicker({
+                format: 'YYYY-MM-DD HH:mm'
+            });
+        });
+    </script>
+</body>
+</html>

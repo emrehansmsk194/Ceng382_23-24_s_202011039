@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1tSmMD25g6qp9YqmB5mxak0wa1EzK0oFM6DCCcScrcE=",
+  "Hash": "45PcDW4xv05JoDh5xIDJ2m3ShBdpvYutQP6Fjf6qtMQ=",
   "Source": "WebApp1",
   "BasePath": "_content/WebApp1",
   "Mode": "Default",
@@ -1212,6 +1212,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login.css"
+    },
+    {
+      "Identity": "C:\\Users\\EMREHAN\\Desktop\\lab11\\Ceng382_23-24_s_202011039\\WebApp1\\wwwroot\\css\\reservations.css",
+      "SourceId": "WebApp1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\EMREHAN\\Desktop\\lab11\\Ceng382_23-24_s_202011039\\WebApp1\\wwwroot\\",
+      "BasePath": "_content/WebApp1",
+      "RelativePath": "css/reservations.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\reservations.css"
     },
     {
       "Identity": "C:\\Users\\EMREHAN\\Desktop\\lab11\\Ceng382_23-24_s_202011039\\WebApp1\\wwwroot\\css\\site copy.css",
