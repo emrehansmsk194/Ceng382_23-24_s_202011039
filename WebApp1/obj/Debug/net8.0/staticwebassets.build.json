@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "45PcDW4xv05JoDh5xIDJ2m3ShBdpvYutQP6Fjf6qtMQ=",
+  "Hash": "fPa878jjLGtUYwY5eHfGj7GQI/2yjgKWqtLCMdEsQU8=",
   "Source": "WebApp1",
   "BasePath": "_content/WebApp1",
   "Mode": "Default",
@@ -1288,6 +1288,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\EMREHAN\\Desktop\\lab11\\Ceng382_23-24_s_202011039\\WebApp1\\wwwroot\\images\\thumb_conference_03.jpg",
+      "SourceId": "WebApp1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\EMREHAN\\Desktop\\lab11\\Ceng382_23-24_s_202011039\\WebApp1\\wwwroot\\",
+      "BasePath": "_content/WebApp1",
+      "RelativePath": "images/thumb_conference_03.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\thumb_conference_03.jpg"
     },
     {
       "Identity": "C:\\Users\\EMREHAN\\Desktop\\lab11\\Ceng382_23-24_s_202011039\\WebApp1\\wwwroot\\js\\site.js",

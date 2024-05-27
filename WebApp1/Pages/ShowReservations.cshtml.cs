@@ -60,11 +60,6 @@ namespace MyApp.Namespace
                 reservationsQuery = reservationsQuery.Where(r => r.Time.Date >= StartDateFilter.Value);
             }
 
-            if (EndDateFilter.HasValue)
-            {
-                reservationsQuery = reservationsQuery.Where(r => r.Time.Date <= EndDateFilter.Value);
-            }
-
             if (CapacityFilter.HasValue)
             {
                 reservationsQuery = reservationsQuery.Where(r => r.Room.Capacity >= CapacityFilter.Value);

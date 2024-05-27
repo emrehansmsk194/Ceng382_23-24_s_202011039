@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\EMREHAN\\Desktop\\lab11\\Ceng382_23-24_s_202011039\\WebApp1\\wwwroot\\images\\thumb_conference_03.jpg",
+      "PackagePath": "staticwebassets\\images\\thumb_conference_03.jpg"
+    },
+    {
       "Id": "C:\\Users\\EMREHAN\\Desktop\\lab11\\Ceng382_23-24_s_202011039\\WebApp1\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

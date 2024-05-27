@@ -1,9 +1,61 @@
 ﻿@page
-@model IndexModel
+@model WebApp1.Pages.IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Rooms";
 }
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rooms</title>
+    <link rel="stylesheet" href="~/css/site.css">
+    <style>
+        .room-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .room-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 300px;
+        }
+        .room-card img {
+            width: 100%;
+            height: auto;
+        }
+        .room-card h3 {
+            text-align: center;
+            padding: 10px;
+        }
+        .room-card p {
+            padding: 0 10px 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <h1 class="header1">Room Reservations</h1>
+        <p class="lead">
+            Welcome to our room reservation system. Here, you can find and book rooms for your events and meetings. 
+            Browse through the list of available rooms below, each with its own photo and capacity details. 
+            Click on a room to see more details and make a reservation. We hope you find the perfect space for your needs.
+        </p>
+    </header>
+    <section class="room-container">
+        @foreach (var room in Model.RoomsList)
+        {
+            <div class="room-card">
+                <a href="/CreateReservations"><img src="~/images/thumb_conference_03.jpg" alt="Room Image"></a>
+                <h3>@room.RoomName</h3>
+                <p>Capacity: @room.Capacity</p>
+            </div>
+        }
+    </section>
+</body>
+</html>
