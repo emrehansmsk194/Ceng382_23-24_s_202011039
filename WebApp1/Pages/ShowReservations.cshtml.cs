@@ -39,13 +39,13 @@ namespace MyApp.Namespace
 
         public async Task OnGetAsync()
         {
-            // Varsayılan olarak bu haftayı seç
+           
             if (SelectedWeek == default)
             {
                 SelectedWeek = DateTime.Now.StartOfWeek(DayOfWeek.Monday);
             }
 
-            // Haftalık rezervasyonları getir
+        
             var reservationsQuery = _context.reservations
                 .Include(r => r.Room)
                 .Where(r => r.Room.IsDeleted == false && r.Time >= SelectedWeek && r.Time < SelectedWeek.AddDays(7));
@@ -88,7 +88,7 @@ namespace MyApp.Namespace
                 await _context.SaveChangesAsync();
             }
 
-            return RedirectToPage(new { SelectedWeek, RoomNameFilter, StartDateFilter, EndDateFilter, CapacityFilter });
+             return RedirectToAction("Get");
         }
 
         public async Task<IActionResult> OnPostEditAsync(int id)
