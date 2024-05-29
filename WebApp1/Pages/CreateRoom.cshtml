@@ -13,14 +13,14 @@
         <h4 style="text-align: center;">Create a New Room</h4>
         <form method="post">
             <div class="form-group">
-                <label asp-for="NewRoom.RoomName"></label>
+                <label asp-for="NewRoom.RoomName">Room Name</label>
                 <input asp-for="NewRoom.RoomName" class="form-control" />
                 <span asp-validation-for="NewRoom.RoomName" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label asp-for="NewRoom.Capacity"></label>
-                <input asp-for="NewRoom.Capacity" class="form-control" />
+                <input asp-for="NewRoom.Capacity" class="form-control" type="number"/>
             </div>
             <button type="submit" id="create-button" class="btn btn-primary" style="margin-top: 10px;">Create</button>
         </form>

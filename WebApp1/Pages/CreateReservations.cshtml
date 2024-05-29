@@ -17,18 +17,25 @@
         <h1 class="header1">Create a Reservation</h1>
         <form id="createReservationForm" method="post">
             <div class="form-group">
-                <label asp-for="NewReservation.ReserverName"></label>
+                <label asp-for="NewReservation.ReserverName">Reserver Name</label>
                 <input asp-for="NewReservation.ReserverName" class="form-control" />
                 <span asp-validation-for="NewReservation.ReserverName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="NewReservation.RoomId">Room Name</label>
-                <select asp-for="NewReservation.RoomId" class="form-control">
-                    @foreach (var room in Model.RoomsList)
-                    {
-                        <option value="@room.Id">@room.RoomName</option>
-                    }
-                </select>
+              @if (Model.RoomsList != null && Model.RoomsList.Any())
+                {
+                    <select asp-for="NewReservation.RoomId" class="form-control">
+                        @foreach (var room in Model.RoomsList)
+                        {
+                            <option value="@room.Id">@room.RoomName</option>
+                        }
+                    </select>
+                }
+                else
+                {
+                    <p>No rooms available.</p>
+                }
                 <span asp-validation-for="NewReservation.RoomId" class="text-danger"></span>
             </div>
             <div class="form-group">
