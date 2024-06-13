@@ -13,3 +13,18 @@ C:\Users\EMREHAN\Desktop\Lab Klasörü\obj\Debug\net8.0\refint\Lab Klasörü.dll
 C:\Users\EMREHAN\Desktop\Lab Klasörü\obj\Debug\net8.0\Lab Klasörü.pdb
 C:\Users\EMREHAN\Desktop\Lab Klasörü\obj\Debug\net8.0\Lab Klasörü.genruntimeconfig.cache
 C:\Users\EMREHAN\Desktop\Lab Klasörü\obj\Debug\net8.0\ref\Lab Klasörü.dll
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23-24_s_202011039\bin\Debug\net8.0\Lab Klasörü.exe
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23-24_s_202011039\bin\Debug\net8.0\Lab Klasörü.deps.json
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23-24_s_202011039\bin\Debug\net8.0\Lab Klasörü.runtimeconfig.json
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23-24_s_202011039\bin\Debug\net8.0\Lab Klasörü.dll
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23-24_s_202011039\bin\Debug\net8.0\Lab Klasörü.pdb
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23-24_s_202011039\obj\Debug\net8.0\Lab Klasörü.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23-24_s_202011039\obj\Debug\net8.0\Lab Klasörü.AssemblyInfoInputs.cache
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23-24_s_202011039\obj\Debug\net8.0\Lab Klasörü.AssemblyInfo.cs
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23-24_s_202011039\obj\Debug\net8.0\Lab Klasörü.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23-24_s_202011039\obj\Debug\net8.0\Lab Klasörü.sourcelink.json
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23-24_s_202011039\obj\Debug\net8.0\Lab Klasörü.dll
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23-24_s_202011039\obj\Debug\net8.0\refint\Lab Klasörü.dll
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23-24_s_202011039\obj\Debug\net8.0\Lab Klasörü.pdb
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23-24_s_202011039\obj\Debug\net8.0\Lab Klasörü.genruntimeconfig.cache
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23-24_s_202011039\obj\Debug\net8.0\ref\Lab Klasörü.dll
